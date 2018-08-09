@@ -32,7 +32,7 @@ public class ManagementTests {
 		service.addingAccounts(user4);
 
 	    
-		assertEquals(2, service.counterMethod("A"));
+		assertEquals(3, service.counterMethod("X"));
 	    }
 		
 			
