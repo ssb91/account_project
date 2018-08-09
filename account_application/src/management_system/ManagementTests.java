@@ -20,19 +20,19 @@ public class ManagementTests {
 
 		HashMap userHashMap = new HashMap();
 		
-		Account user1 = new Account(1, "A", "B", 123);
-		Account user2 = new Account(2, "X", "Y", 234);
-		Account user3 = new Account(3, "X", "Y", 342);
-		Account user4 = new Account(4, "A", "Y", 423);
+		Account Auser = new Account(1, "A", "B", 123);
+		Account userX = new Account(2, "X", "Y", 234);
+		Account Xuser = new Account(3, "X", "Y", 342);
+		Account userA = new Account(4, "A", "Y", 423);
 		Service service = new Service();
 		
-		service.addingAccounts(user1);
-		service.addingAccounts(user2);
-		service.addingAccounts(user3);
-		service.addingAccounts(user4);
+		service.addingAccounts(Auser);
+		service.addingAccounts(userX);
+		service.addingAccounts(Xuser);
+		service.addingAccounts(userA);
 
 	    
-		assertEquals(3, service.counterMethod("X"));
+		assertEquals(2, service.counterMethod("X"));
 	    }
 		
 			
