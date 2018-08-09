@@ -1,21 +1,30 @@
 package management_system;
 
 public class Account {
+
+	private String firstName;
+	private String lastName;
+	private int accountNumber;
+	private int id;
+
+	public Account() {
 		
-	String firstName;		
-	String lastName;
-	int accountNumber;
+	}
 	
-	public Account(String firstName, String lastName, int accountNumber) {
+	public Account(int iD, String firstName, String lastName, int accountNumber) {
+		this.id = iD;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.accountNumber = accountNumber;
 
-			this.firstName = firstName;		
-			this.lastName = lastName;
-			this.accountNumber = accountNumber;
+	}
 
-		}
-		
-		public String getFirstName() {
+	public String getFirstName() {
 		return firstName;
+	}
+
+	public int getId() {
+		return id;
 	}
 
 	public void setFirstName(String firstName) {
@@ -38,12 +47,10 @@ public class Account {
 		this.accountNumber = accountNumber;
 	}
 
-		public String toString( ) {
-			
-			return firstName + ", " + lastName +  ", " +  accountNumber;			
-			
-		}
-		
-	}
-	
+	public String toString() {
 
+		return firstName + ", " + lastName + ", " + accountNumber;
+
+	}
+
+}
